@@ -5,6 +5,7 @@ using UnityEngine;
 public class start : MonoBehaviour {
 
 	public GameObject Start_Cube;
+	public GameObject music;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,7 @@ public class start : MonoBehaviour {
 			
 			GetComponent<Camera_Control> ().enabled = true;
 			Start_Cube.GetComponent<Rigidbody> ().useGravity = true;
+			music.GetComponent<AudioSource> ().Play ();
 		}
 
 	}
